@@ -1,46 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/02 19:41:39 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 12:55:48 by nsmith           ###   ########.fr       */
+/*   Created: 2026/06/03 15:08:09 by nsmith            #+#    #+#             */
+/*   Updated: 2026/06/03 15:08:13 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *mem, size_t size)
+void	*ft_memchr(const void *str, int chr, size_t size)
 {
-	size_t	i;
-	char	*host;
-	
+	unsigned char	*str_s;
+	unsigned int	i;
+    
+	str_s = (unsigned char *)str;
 	i = 0;
-	host = (char *)mem;
 	while (i < size)
 	{
-		host[i] = '\0';
+		if (str_s[i] == chr)
+			return ((void *)&str_s[i]);
 		i++;
 	}
+	return (0);
 }
-/*
-int	main(void)
+
+int main(void)
 {
 	char	string[100];
-	int	length = 0;
-	char	*test;
-	char	*func;
-	
-	test = string;
-	func = string;
+	char	character[1];
+	int	number;
+	char	*test_str;
+	char	*func_str;
+
 	printf("Test string: ");
 	scanf("%[^\n]s", string);
+	printf("Character: ");
+	scanf(" %c", character);
 	printf("Bytes: ");
-	scanf("%d", &length);
-	bzero(test, length);
-	printf("Test output: %s\n", test);
-	ft_bzero(func, length);
-	printf("Func output: %s\n", func);
-}*/
+	scanf(" %d", &number);
+	printf("---\n");
+	test_str = memchr(string, *character, number);
+	printf("Test output: %s\n\n", test_str);
+	func_str = ft_memchr(string, *character, number);
+	printf("Func output: %s\n\n", func_str);
+}
