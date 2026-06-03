@@ -16,7 +16,7 @@ void	*memcpy(void *dest, const void *src, size_t size)
 {
 	unsigned char	*temp_dest;
 	unsigned char	*temp_src;
-	
+
 	temp_dest = (unsigned char *)dest;
 	temp_src = (unsigned char *)src;
 	while (size > 0)

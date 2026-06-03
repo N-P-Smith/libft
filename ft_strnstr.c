@@ -31,12 +31,12 @@ char	*ft_strnstr(const char *str, const char *sub, size_t length)
 	}
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	char	string[100];
 	char	substr[100];
-	int	number = 0;
+	int		number = 0;
 
 	printf("Main string: ");
 	scanf("%[^\n]s", string);
@@ -47,4 +47,4 @@ int	main(void)
 	printf("---\n");
 	printf("Test output: %s\n\n", strnstr(string, substr, number));
 	printf("Func output: %s\n\n", ft_strnstr(string, substr, number));
-}
+}*/

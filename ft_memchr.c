@@ -16,7 +16,7 @@ void	*ft_memchr(const void *str, int chr, size_t size)
 {
 	unsigned char	*str_s;
 	unsigned int	i;
-    
+
 	str_s = (unsigned char *)str;
 	i = 0;
 	while (i < size)
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *str, int chr, size_t size)
 	}
 	return (0);
 }
-
+/*
 int main(void)
 {
 	char	string[100];
@@ -47,4 +47,4 @@ int main(void)
 	printf("Test output: %s\n\n", test_str);
 	func_str = ft_memchr(string, *character, number);
 	printf("Func output: %s\n\n", func_str);
-}
+}*/

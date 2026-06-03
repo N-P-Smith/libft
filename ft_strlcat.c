@@ -16,7 +16,7 @@ size_t	ft_strlcat(char *destination, const char *source, size_t size)
 {
 	unsigned int	dest_len;
 	unsigned int	src_len;
-	int	i;
+	int				i;
 
 	dest_len = ft_strlen(destination);
 	src_len = ft_strlen(source);

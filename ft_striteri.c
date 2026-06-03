@@ -39,7 +39,7 @@ void	test_d(unsigned int pos, char *chr)  //Doesn't work as intended.
 
 void	ft_striteri(char *str, void (*func)(unsigned int, char *))
 {
-	int pos;
+	int		pos;
 
 	pos = 0;
 	if (!str || !func)

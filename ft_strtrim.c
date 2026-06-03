@@ -17,11 +17,11 @@ static int	inset(char chr, char const *set)
 	size_t	i;
 
 	i = 0;
-	while(set[i])
+	while (set[i])
 	{
-	if (set[i] == chr)
-		return (1);
-	i++;
+		if (set[i] == chr)
+			return (1);
+		i++;
 	}
 	return (0);
 }

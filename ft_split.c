@@ -21,7 +21,7 @@ static size_t	str_count(char const *str, char chr)
 	{
 		while (*str == chr)
 			str++;
-        	if (*str)
+		if (*str)
 			count++;
 		while (*str && *str != chr)
 			str++;
@@ -33,19 +33,19 @@ char	**ft_split(char const *str, char chr)
 {
 	char	**out_str;
 	size_t	len;
-	int	i;
+	int		i;
 
 	out_str = (char **)malloc((str_count(str, chr) + 1) * sizeof(char *));
 	i = 0;
 	if (!str || !out_str)
-        return (NULL);
+		return (NULL);
 	while (*str)
 	{
 		while (*str && *str == chr)
 			str++;
 		if (*str)
 		{
-			if(!ft_strchr(str, chr))
+			if (!ft_strchr(str, chr))
 				len = ft_strlen(str);
 			else
 				len = ft_strchr(str, chr) - str;

@@ -16,7 +16,7 @@ void	ft_bzero(void *mem, size_t size)
 {
 	size_t	i;
 	char	*host;
-	
+
 	i = 0;
 	host = (char *)mem;
 	while (i < size)
