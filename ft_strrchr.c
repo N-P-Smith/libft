@@ -6,13 +6,13 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:31:54 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 18:39:24 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 19:49:29 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *str, int chr)
+char	*ft_strrchr(const char *str, int chr)
 {
 	int	end;
 
