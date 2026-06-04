@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 15:58:49 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 16:04:35 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:44:09 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ int	ft_atoi(const char *str)
 
 	sign = 1;
 	out = 0;
-    if (*str == ' ')
+	if (*str == ' ')
 		str++;
 	if (*str == '-')
-    {
-	    sign = -1;
+	{
+		sign = -1;
 		str++;
-    }	
-    if (*str >= '0' && *str <= '9')
+	}
+	if (*str >= '0' && *str <= '9')
 	{
 		out = out * 10; 
 		out = out + (*str - '0');

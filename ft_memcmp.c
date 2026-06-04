@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 12:34:10 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 15:45:16 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:37:15 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ int	ft_memcmp(const void *mem1, const void *mem2, size_t size)
 		chr1++;
 		chr2++;
 	}
-	return ((int) (*mem1 - *mem2));
+	return ((int)(*chr1 - *chr2));
 }

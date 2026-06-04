@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 17:05:07 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/02 17:20:57 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:15:22 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 t_list	*ft_lstmap(t_list *list, void *(*func)(void *), void (*del)(void *))
 {
-	t_list	new;
-	t_list	obj;
+	t_list	*new;
+	t_list	*obj;
 
-	if (!new || !func || !del)
+	if (!func || !del)
 		return (NULL);
 	new = NULL;
 	while (list)

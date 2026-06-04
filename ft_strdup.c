@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:46:28 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 16:57:33 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:43:18 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char	*ft_strdup(const char *str)
 	char	*dup;
 	int		i;
 
-	dup = (char *)malloc(strlen(*str) + 1);
+	dup = (char *)malloc(strlen(str) + 1);
+	i = 0;
 	if (!dup)
 		return (NULL);
 	while (str[i])

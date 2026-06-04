@@ -1,4 +1,4 @@
-NAME = libft.a
+NAME = libft_personal.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror

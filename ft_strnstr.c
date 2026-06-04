@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 17:14:17 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 17:15:18 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 17:37:02 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@ char	*ft_strnstr(const char *str, const char *sub, size_t length)
 
 	i1 = 0;
 	if (!sub[0])
-		return (*str);
+		return ((char *)str);
 	while (str[i1] != '\0' && i1 <= length)
 	{
 		i2 = 0;
 		while (str[i1 + i2] && sub[i2] && str[i1 + i2] == sub[i2])
 			i2++;
 		if (!sub[i2])
-			return (&str[i1]);
+			return ((char *)&str[i1]);
 		i1++;
 	}
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 20:20:48 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 20:21:02 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:41:33 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,6 @@
 int	ft_toupper(int chr)
 {
 	if (chr >= 'a' && chr <= 'z')
-		return (chr - 32);
+		chr = chr - 32;
+	return (chr);
 }

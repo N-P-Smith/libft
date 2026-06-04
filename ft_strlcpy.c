@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 17:28:42 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 15:23:23 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 17:31:59 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int		i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0)

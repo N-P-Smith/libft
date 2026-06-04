@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 20:05:34 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 20:05:53 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:44:28 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int	ft_isalnum(int chr)
 {
-	if (ft_isalpha(chr) = 1 || (ft_isdigit(chr) = 1)
+	if ((chr >= 'a' && chr <= 'z')
+		|| (chr >= 'A' && chr <= 'Z')
+		|| (chr >= '0' && chr <= '9'))
 		return (1);
 	else
 		return (0);

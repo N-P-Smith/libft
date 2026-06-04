@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 20:48:30 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 20:48:51 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 17:40:39 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ void	ft_putnbr_fd(int num, int fd)
 		ft_putchar_fd((number % 10) + '0', fd);
 	}
 	else
-		ft_putchar_fd(nbr + '0', fd);
+		ft_putchar_fd(number + '0', fd);
 }

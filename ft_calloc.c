@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:36:31 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 12:35:03 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 17:38:45 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t num, size_t size)
 		return (NULL);
 	while (i < num * size)
 		mem[i++] = 0;
-	return ;
+	return (mem);
 }
 /*
 int main(void)

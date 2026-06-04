@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 21:01:39 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 21:01:54 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 17:41:06 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,5 @@ void	ft_putendl_fd(char *str, int fd)
 {
 	while (*str)
 		write(fd, str++, 1);
-	write(fd, '\n', 1);
+	write(fd, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 15:59:57 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/02 16:11:17 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 18:10:51 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **list, t_list *new)
 {
-	t_list	last;
+	t_list	*last;
     
 	if (!new)
 		return ;
