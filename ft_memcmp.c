@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 12:34:10 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 18:37:15 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/05 12:32:49 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,21 @@ int	ft_memcmp(const void *mem1, const void *mem2, size_t size)
 {
 	unsigned char	*chr1;
 	unsigned char	*chr2;
+	size_t			i;
 
 	chr1 = (unsigned char *)mem1;
 	chr2 = (unsigned char *)mem2;
-	if (size == 0)
-		return (0);
-	while (*chr1 == *chr2 && size-- > 0)
+	i = 0;
+	while (i < size)
 	{
-		chr1++;
-		chr2++;
+		if (chr1[i] != chr2[i])
+			return (chr1[i] - chr2[i]);
+		i++;
 	}
-	return ((int)(*chr1 - *chr2));
+	return (0);
 }
+/*
+int	main(void)
+{
+	ft_memcmp("mem1", "mem2", 5);
+}*/

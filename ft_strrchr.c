@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/04 16:31:54 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 19:49:29 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/05 15:39:41 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@ char	*ft_strrchr(const char *str, int chr)
 {
 	int	end;
 
-	end = ft_strlen(str);
+	end = (int)ft_strlen(str);
+	if (!((unsigned char) chr))
+		return ((char *) &str[end]);
 	while (end >= 0)
 	{
-		if (str[end] == chr)
-			return ((char *)str);
+		if (str[end] == (unsigned char) chr)
+			return ((char *) &str[end]);
 		end--;
 	}
-	return ((char *)str);
+	return (NULL);
 }

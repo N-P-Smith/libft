@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 16:26:07 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/04 19:50:45 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/04 20:45:29 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char	**ft_split(char const *str, char chr)
 	out_str[i] = NULL;
 	return (out_str);
 }
-
+/*
 int	main(void)
 {
 	char	string[100];
@@ -74,4 +74,4 @@ int	main(void)
 	printf("---\n");
 	while (output[i])
 		printf("%s\n", output[i++]);
-}
+}*/
