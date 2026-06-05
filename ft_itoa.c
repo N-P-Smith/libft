@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 12:57:49 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 12:58:01 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/05 19:31:55 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	set_len(int num)
 
 	len = 0;
 	if (num == 0)
-		return (2);
+		return (1);
 	if (num < 0)
 	{
 		num = num * -1;
@@ -41,6 +41,8 @@ char	*ft_itoa(int num)
 	out = malloc(set_len(num) + 1);
 	if (num == 0)
 		out[0] = '0';
+	if (num == -2147483648)
+		return (ft_strdup("-2147483648"));
 	if (num < 0)
 	{
 		num = num * -1;

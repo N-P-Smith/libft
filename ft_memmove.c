@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 15:04:33 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 15:04:39 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/05 19:52:10 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,12 @@ void	*ft_memmove(void *dest, const void *src, size_t size)
 	i = 0;
 	if (!dest && !src)
 		return (NULL);
-	if (temp_dest < temp_src || temp_dest >= (temp_src + size))
+	if (temp_src < temp_dest)
 	{
-		while (i < size)
-		{
-			*temp_dest++ = *temp_src++;
-			i++;
-		}
+		while (size--)
+			temp_dest[size] = temp_src[size];
 	}
 	else
-	{
-		temp_dest += size;
-		temp_src += size;
-		while (size--)
-			*(temp_dest--) = *(temp_src--);
-	}
+		ft_memcpy(temp_dest, temp_src, size);
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: nsmith <nsmith@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 17:03:38 by nsmith            #+#    #+#             */
-/*   Updated: 2026/06/03 17:03:55 by nsmith           ###   ########.fr       */
+/*   Updated: 2026/06/05 18:34:54 by nsmith           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 char	*ft_strjoin(char const *str1, char const *str2)
 {
 	char	*join;
-	size_t	i1;
-	size_t	i2;
+	int		i1;
+	int		i2;
 
-	join = malloc(sizeof(str1) + sizeof(str2) + 1);
+	join = (char *)malloc((ft_strlen(str1) + ft_strlen(str2) + 1) 
+			* sizeof(char));
 	i1 = 0;
 	i2 = 0;
 	if (!join)
